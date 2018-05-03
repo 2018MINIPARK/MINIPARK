@@ -64,4 +64,11 @@ public class HomeController {
 		
 		return "order_complete";
 	}
+	
+	@RequestMapping(value = "/display", method = RequestMethod.GET)
+	public String display(Locale locale, Model model) {
+		logger.info("display page! The client locale is {}.", locale);
+		
+		return "main_display";		
+	}
 }

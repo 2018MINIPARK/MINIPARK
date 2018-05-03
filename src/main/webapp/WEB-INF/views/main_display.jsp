@@ -392,11 +392,11 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3> </div>
+                    <h3 class="text-primary">전시</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item active">전시</li>
                     </ol>
                 </div>
             </div>
@@ -405,8 +405,6 @@
             <div class="container-fluid">
                 <!-- Start Page Content -->
                 <div class="row">
-
-                    <!--검색-->
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
@@ -423,100 +421,370 @@
                             </div>
                         </div>
                     </div>
+								</div>
+								<div class="row">
+									<!--추천 상품1 -->
+									<div class="card col-md-3">
+											<div class="testimonial-widget-one p-17">
+													<div class="testimonial-widget-one owl-carousel owl-theme">
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/2.jpg" />" alt="" />
+																			<div class="testimonial-author">John</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
-                    <div class="col-md-9">
-                      <div class="slider">
-                        <div><img src="https://dummyimage.com/1017x400/8a888a/000000" title="event1" alt="event"></div>
-                        <div><img src="https://dummyimage.com/1017x400/111/000000" title="event2" alt="event"></div>
-                        <div><img src="https://dummyimage.com/1017x400/ccc/000000" title="event3" alt="event"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-        								<div class="card-title">
-        									<h4>Ranking </h4>
-        								</div>
-        								<div class="recent-comment">
-        									<div class="media">
-        										<div class="media-body">
-        											<h4 class="media-heading">1</h4>
-        										</div>
-        									</div>
-        									<div class="media">
-        										<div class="media-body">
-        											<h4 class="media-heading">2</h4>
-        										</div>
-        									</div>
-        									<div class="media">
-        										<div class="media-body">
-        											<h4 class="media-heading">3</h4>
-        										</div>
-        									</div>
-        									<div class="media">
-        										<div class="media-body">
-        											<h4 class="media-heading">4</h4>
-        										</div>
-        									</div>
-                          <div class="media no-border">
-                            <div class="media-body">
-                              <h4 class="media-heading">5</h4>
-                            </div>
-                          </div>
-        								</div>
-        							</div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-usd f-s-40 color-primary"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>568120</h2>
-                                    <p class="m-b-0">Total Revenue</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-shopping-cart f-s-40 color-success"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>1178</h2>
-                                    <p class="m-b-0">Sales</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-archive f-s-40 color-warning"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>25</h2>
-                                    <p class="m-b-0">Stores</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-user f-s-40 color-danger"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>847</h2>
-                                    <p class="m-b-0">Customer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/3.jpg" />" alt="" />
+																			<div class="testimonial-author">Abraham</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/1.jpg" />" alt="" />
+																			<div class="testimonial-author">Lincoln</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/4.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																		 <div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/5.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/6.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+													</div>
+											</div>
+									</div>
+									<!--추천 상품2 -->
+									<div class="card col-md-3">
+											<div class="testimonial-widget-one p-17">
+													<div class="testimonial-widget-one owl-carousel owl-theme">
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/2.jpg" />" alt="" />
+																			<div class="testimonial-author">John</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/3.jpg" />" alt="" />
+																			<div class="testimonial-author">Abraham</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/1.jpg" />" alt="" />
+																			<div class="testimonial-author">Lincoln</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/4.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																		 <div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/5.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/6.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+													</div>
+											</div>
+									</div>
+									<!--추천 상품3 -->
+									<div class="card col-md-3">
+											<div class="testimonial-widget-one p-17">
+													<div class="testimonial-widget-one owl-carousel owl-theme">
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/2.jpg" />" alt="" />
+																			<div class="testimonial-author">John</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/3.jpg" />" alt="" />
+																			<div class="testimonial-author">Abraham</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/1.jpg" />" alt="" />
+																			<div class="testimonial-author">Lincoln</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/4.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																		 <div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/5.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/6.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+													</div>
+											</div>
+									</div>
+									<!--추천 상품4 -->
+									<div class="card col-md-3 p-10">
+											<div class="testimonial-widget-one p-17">
+													<div class="testimonial-widget-one owl-carousel owl-theme">
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/2.jpg" />" alt="" />
+																			<div class="testimonial-author">John</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/3.jpg" />" alt="" />
+																			<div class="testimonial-author">Abraham</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/1.jpg" />" alt="" />
+																			<div class="testimonial-author">Lincoln</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/4.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																		 <div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/5.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+															<div class="item">
+																	<div class="testimonial-content">
+																			<img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/6.jpg" />" alt="" />
+																			<div class="testimonial-author">TYRION LANNISTER</div>
+																			<div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+																			<div class="testimonial-text">
+																					<i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+																					<i class="fa fa-quote-right"></i>
+																			</div>
+																	</div>
+															</div>
+													</div>
+											</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6 m-b-20">
+										<div class="card p-30">
+											<img src="/resources/images/big/img1.jpg" class="img-responsive radius" />
+												<div class="media">
+														<div class="media-body media-text-right">
+																<h2 class="m-b-0">Total Revenue</h2>
+																<h2 class="m-t-0">568120</h2>
+														</div>
+												</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-6 m-b-20">
+										<div class="card p-30">
+											<img src="/resources/images/big/img2.jpg" class="img-responsive radius" />
+												<div class="media">
+														<div class="media-body media-text-right">
+																<h2 class="m-b-0">Total Revenue</h2>
+																<h2 class="m-t-0">568120</h2>
+														</div>
+												</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-6 m-b-20">
+										<div class="card p-30">
+											<img src="/resources/images/big/img3.jpg" class="img-responsive radius" />
+												<div class="media">
+														<div class="media-body media-text-right">
+																<h2 class="m-b-0">Total Revenue</h2>
+																<h2 class="m-t-0">568120</h2>
+														</div>
+												</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-6 m-b-20">
+										<div class="card p-30">
+											<img src="/resources/images/big/img4.jpg" class="img-responsive radius" />
+												<div class="media">
+														<div class="media-body media-text-right">
+																<h2 class="m-b-0">Total Revenue</h2>
+																<h2 class="m-t-0">568120</h2>
+														</div>
+												</div>
+										</div>
+									</div>
+
                 </div>
 
                 <!--카테고리 별 추천 상품-->
