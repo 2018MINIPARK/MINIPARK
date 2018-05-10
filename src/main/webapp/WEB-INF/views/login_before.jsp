@@ -62,7 +62,7 @@
                     <ul class="navbar-nav my-lg-0">
                         <!-- sign-up -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link active" href="${pageContext.request.contextPath}/page_login">
                             	<i class="ti-check"></i> Login
                            	</a>
                         </li>
