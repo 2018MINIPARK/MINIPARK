@@ -31,6 +31,7 @@
     <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" />">
     <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" />">
 <![endif]-->
+		<!-- bxslider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
 </head>
@@ -424,13 +425,16 @@
                         </div>
                     </div>
 
+										<!-- Main Event -->
                     <div class="col-md-9">
                       <div class="slider">
-                        <div><img src="https://dummyimage.com/1017x400/8a888a/000000" title="event1" alt="event"></div>
-                        <div><img src="https://dummyimage.com/1017x400/111/000000" title="event2" alt="event"></div>
-                        <div><img src="https://dummyimage.com/1017x400/ccc/000000" title="event3" alt="event"></div>
+                        <div><a href="#"><img src="https://dummyimage.com/1017x400/8a888a/000000" title="event1" alt="event"></div></a>
+                        <div><a href="#"><img src="https://dummyimage.com/1017x400/111/000000" title="event2" alt="event"></div></a>
+                        <div><a href="#"><img src="https://dummyimage.com/1017x400/ccc/000000" title="event3" alt="event"></div></a>
                       </div>
                     </div>
+
+										<!-- Ranking -->
                     <div class="col-md-3">
                       <div class="card">
         								<div class="card-title">
@@ -472,7 +476,7 @@
                                     <span><i class="fa fa-usd f-s-40 color-primary"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2>568120</h2>
+                                    <h2>568,120원</h2>
                                     <p class="m-b-0">Total Revenue</p>
                                 </div>
                             </div>
@@ -485,7 +489,7 @@
                                     <span><i class="fa fa-shopping-cart f-s-40 color-success"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2>1178</h2>
+                                    <h2>1,178원</h2>
                                     <p class="m-b-0">Sales</p>
                                 </div>
                             </div>
@@ -498,7 +502,7 @@
                                     <span><i class="fa fa-archive f-s-40 color-warning"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2>25</h2>
+                                    <h2>52,500원</h2>
                                     <p class="m-b-0">Stores</p>
                                 </div>
                             </div>
@@ -511,7 +515,7 @@
                                     <span><i class="fa fa-user f-s-40 color-danger"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2>847</h2>
+                                    <h2>847원</h2>
                                     <p class="m-b-0">Customer</p>
                                 </div>
                             </div>
