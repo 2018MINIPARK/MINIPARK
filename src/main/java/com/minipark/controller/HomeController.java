@@ -72,6 +72,11 @@ public class HomeController {
 		return "main_display";		
 	}
 	
+	@RequestMapping(value ="/detail", method = RequestMethod.GET)
+	public String detail(Locale locale, Model model) {
+		logger.info("detail page! The client locale isP {}", locale);
+		return "detail";
+	}
 	
 	@RequestMapping(value = "/page_login", method = RequestMethod.GET)
 	public String page_login(Locale locale, Model model) {

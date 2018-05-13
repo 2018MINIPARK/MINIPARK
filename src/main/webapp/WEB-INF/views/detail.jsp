@@ -395,11 +395,12 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">전시</h3> </div>
+                    <h3 class="text-primary">최종상품페이지</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                         <li class="breadcrumb-item active">전시</li>
+												<li class="breadcrumb-item active">최종상품페이지</li>
                     </ol>
                 </div>
             </div>
@@ -625,7 +626,7 @@
 								<!-- 카테고리 내 중 분류 상품 -->
 								<ul class="row">
 									<li class="col-md-12">
-										<a href="/detail">
+										<a href="#">
                       <div class="card p-30">
                           <div class="media">
                               <div class="media-left meida media-middle">
