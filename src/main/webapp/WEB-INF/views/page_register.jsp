@@ -1,7 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
 
 <head>
     <meta charset="utf-8">
@@ -72,7 +74,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>E-MAIL</label>
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="text" class="form-control" placeholder="Email">
                                     </div>
                                     <div class="form-group">
                                         <label>Name</label>
@@ -80,15 +82,15 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Birth</label>
-                                        <input type="month" class="form-control" placeholder="Birth">
+                                        <input type="text" class="form-control" placeholder="Birth">
                                     </div>
                                     <div class="form-group">
                                         <label>ADDRESS</label>
-                                        <input type="month" class="form-control" placeholder="Address">
+                                        <input type="text" class="form-control" placeholder="Address">
                                     </div>
                                     <div class="form-group">
                                         <label>HP</label>
-                                        <input type="month" class="form-control" placeholder="Hp">
+                                        <input type="text" class="form-control" placeholder="Hp">
                                     </div>
                                     <div class="checkbox">
                                         <label>
@@ -97,9 +99,9 @@
 										<input type="checkbox"> Agree all
 									</label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Register</button>
+                                    <a href="${pageContext.request.contextPath}" class="btn btn-primary btn-lg active" role="button">회원가입</a>
                                     <div class="register-link m-t-15 text-center">
-                                        <p>Already have account ? <a href="${pageContext.request.contextPath}/page_login"> Sign in</a></p>
+                                        <p>이미 회원가입 하셨나요 ? <a href="${pageContext.request.contextPath}/page_login">로그인</a></p>
                                     </div>
                                 </form>
                             </div>

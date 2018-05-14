@@ -139,6 +139,11 @@
                         	</form>
                         </li> -->
                         <!-- Comment -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="${pageContext.request.contextPath}/page_login">
+                            	<i class="ti-check"></i> Login
+                           	</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bell"></i>
 								<div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
@@ -195,36 +200,32 @@
                             <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn" aria-labelledby="2">
                                 <ul>
                                     <li>
-                                        <div class="drop-title">You have 4 new messages</div>
+                                        <div class="drop-title">마이페이지</div>
                                     </li>
                                     <li>
                                         <div class="message-center">
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <div class="user-img"> <img src="<c:url value="/resources/images/users/5.jpg" />" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                            <!-- 주문내역 -->
+                                            <a href="${pageContext.request.contextPath}/order_breakdown">
                                                 <div class="mail-contnet">
-                                                    <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span>
+                                                    <span class="mail-desc" >주문내역</span>
                                                 </div>
                                             </a>
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <div class="user-img"> <img src="<c:url value="/resources/images/users/2.jpg" />" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                            <!-- 회원정보 -->
+                                            <a href="${pageContext.request.contextPath}/order_breakdown">
                                                 <div class="mail-contnet">
-                                                    <h5>John Doe</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
+                                                    <span class="mail-desc">회원정보</span>
                                                 </div>
                                             </a>
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <div class="user-img"> <img src="<c:url value="/resources/images/users/3.jpg" />" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                            <!-- 포인트내역 -->
+                                            <a href="${pageContext.request.contextPath}/order_breakdown">
                                                 <div class="mail-contnet">
-                                                    <h5>Mr. John</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span>
+                                                    <span class="mail-desc">포인트내역</span>
                                                 </div>
                                             </a>
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <div class="user-img"> <img src="<c:url value="/resources/images/users/4.jpg" />" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                            <!-- 관리자페이지 -->
+                                            <a href="${pageContext.request.contextPath}/order_breakdown">
                                                 <div class="mail-contnet">
-                                                    <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
+                                                    <span class="mail-desc">관리자페이지</span>
                                                 </div>
                                             </a>
                                         </div>

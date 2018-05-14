@@ -69,7 +69,7 @@
                                         <label>Password</label> 
                                         <input type="password" class="form-control" placeholder="Password">
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Sign in</button>
+                                    <a href="${pageContext.request.contextPath}" class="btn btn-primary btn-lg active" role="button">Sign in</a>
                                     <div class="form-group">
                                     	<div class="checkbox">
                                         	<label class="pull-right">

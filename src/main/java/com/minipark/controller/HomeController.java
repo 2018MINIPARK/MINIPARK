@@ -91,4 +91,11 @@ public class HomeController {
 		
 		return "page_register";
 	}
+	
+	@RequestMapping(value = "/order_breakdown", method = RequestMethod.GET)
+	public String order_breakedown(Locale locale, Model model) {
+		logger.info("order_breakdown page! The client locale is {}.", locale);
+		
+		return "order_breakdown";
+	}
 }
