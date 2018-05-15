@@ -44,13 +44,6 @@ public class HomeController {
 		return "login_after";
 	}
 	
-	@RequestMapping(value = "/cart", method = RequestMethod.GET)
-	public String cart(Locale locale, Model model) {
-		logger.info("cart page! The client locale is {}.", locale);
-		
-		return "cart";
-	}
-	
 	@RequestMapping(value = "/order_write", method = RequestMethod.GET)
 	public String order_write(Locale locale, Model model) {
 		logger.info("order_write page! The client locale is {}.", locale);
@@ -98,6 +91,7 @@ public class HomeController {
 		
 		return "order_breakdown";
 	}
+	
 	@RequestMapping(value = "/CartList", method = RequestMethod.GET)
 	public String cart(Locale locale, Model model) {
 		logger.info("CartList page! The client locale is {}.", locale);
