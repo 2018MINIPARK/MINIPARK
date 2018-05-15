@@ -98,4 +98,24 @@ public class HomeController {
 		
 		return "order_breakdown";
 	}
+	@RequestMapping(value = "/CartList", method = RequestMethod.GET)
+	public String cart(Locale locale, Model model) {
+		logger.info("CartList page! The client locale is {}.", locale);
+		
+		return "CartList";
+	}
+	
+	@RequestMapping(value = "/OrderWrite", method = RequestMethod.GET)
+	public String order_write(Locale locale, Model model) {
+		logger.info("OrderWrite page! The client locale is {}.", locale);
+		
+		return "OrderWrite";
+	}
+	
+	@RequestMapping(value = "/OrderComplete", method = RequestMethod.GET)
+	public String order_complete(Locale locale, Model model) {
+		logger.info("OrderComplete page! The client locale is {}.", locale);
+		
+		return "OrderComplete";
+	}
 }
