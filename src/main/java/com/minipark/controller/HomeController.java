@@ -64,4 +64,38 @@ public class HomeController {
 		
 		return "order_complete";
 	}
+	
+	@RequestMapping(value = "/display", method = RequestMethod.GET)
+	public String display(Locale locale, Model model) {
+		logger.info("display page! The client locale is {}.", locale);
+		
+		return "main_display";		
+	}
+	
+	@RequestMapping(value ="/detail", method = RequestMethod.GET)
+	public String detail(Locale locale, Model model) {
+		logger.info("detail page! The client locale isP {}", locale);
+		return "detail";
+	}
+	
+	@RequestMapping(value = "/page_login", method = RequestMethod.GET)
+	public String page_login(Locale locale, Model model) {
+		logger.info("page_login page! The client locale is {}.", locale);
+		
+		return "page_login";
+	}
+	
+	@RequestMapping(value = "/page_register", method = RequestMethod.GET)
+	public String page_register(Locale locale, Model model) {
+		logger.info("page_register page! The client locale is {}.", locale);
+		
+		return "page_register";
+	}
+	
+	@RequestMapping(value = "/order_breakdown", method = RequestMethod.GET)
+	public String order_breakedown(Locale locale, Model model) {
+		logger.info("order_breakdown page! The client locale is {}.", locale);
+		
+		return "order_breakdown";
+	}
 }

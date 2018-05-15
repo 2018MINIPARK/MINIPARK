@@ -1,7 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
 
 <head>
     <meta charset="utf-8">
@@ -29,6 +31,9 @@
     <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" />">
     <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" />">
 <![endif]-->
+		<!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
 </head>
 
 <body class="fix-header fix-sidebar">
@@ -121,19 +126,24 @@
                     <ul class="navbar-nav my-lg-0">
 
                         <!-- Search -->
-                        <!-- <li class="nav-item hidden-sm-down search-box"> 
+                        <!-- <li class="nav-item hidden-sm-down search-box">
                         	<a class="nav-link hidden-sm-down text-muted  " href="javascript:void(0)">
                         		<i class="ti-search"></i>
                         	</a>
                             <form class="app-search">
-                                <input type="text" class="form-control" placeholder="Search here"> 
+                                <input type="text" class="form-control" placeholder="Search here">
                                 	<a class="srh-btn">
                                 		<i class="ti-close">
                                 		</i>
-                               		</a> 
+                               		</a>
                         	</form>
                         </li> -->
                         <!-- Comment -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="${pageContext.request.contextPath}/page_login">
+                            	<i class="ti-check"></i> Login
+                           	</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bell"></i>
 								<div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
@@ -190,36 +200,32 @@
                             <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn" aria-labelledby="2">
                                 <ul>
                                     <li>
-                                        <div class="drop-title">You have 4 new messages</div>
+                                        <div class="drop-title">마이페이지</div>
                                     </li>
                                     <li>
                                         <div class="message-center">
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <div class="user-img"> <img src="<c:url value="/resources/images/users/5.jpg" />" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                            <!-- 주문내역 -->
+                                            <a href="${pageContext.request.contextPath}/order_breakdown">
                                                 <div class="mail-contnet">
-                                                    <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span>
+                                                    <span class="mail-desc" >주문내역</span>
                                                 </div>
                                             </a>
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <div class="user-img"> <img src="<c:url value="/resources/images/users/2.jpg" />" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                            <!-- 회원정보 -->
+                                            <a href="${pageContext.request.contextPath}/order_breakdown">
                                                 <div class="mail-contnet">
-                                                    <h5>John Doe</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
+                                                    <span class="mail-desc">회원정보</span>
                                                 </div>
                                             </a>
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <div class="user-img"> <img src="<c:url value="/resources/images/users/3.jpg" />" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                            <!-- 포인트내역 -->
+                                            <a href="${pageContext.request.contextPath}/order_breakdown">
                                                 <div class="mail-contnet">
-                                                    <h5>Mr. John</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span>
+                                                    <span class="mail-desc">포인트내역</span>
                                                 </div>
                                             </a>
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <div class="user-img"> <img src="<c:url value="/resources/images/users/4.jpg" />" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                            <!-- 관리자페이지 -->
+                                            <a href="${pageContext.request.contextPath}/order_breakdown">
                                                 <div class="mail-contnet">
-                                                    <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
+                                                    <span class="mail-desc">관리자페이지</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -401,6 +407,69 @@
             <div class="container-fluid">
                 <!-- Start Page Content -->
                 <div class="row">
+
+                    <!--검색-->
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="input-group input-group-default">
+                                                <input type="text" placeholder="Search 검색" name="Search" class="form-control">
+                                                <span class="input-group-btn"><button class="btn btn-primary" type="submit"><i class="ti-search"></i></button></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+										<!-- Main Event -->
+                    <div class="col-md-9">
+                      <div class="slider">
+                        <div><a href="#"><img src="https://dummyimage.com/1017x400/8a888a/000000" title="event1" alt="event"></div></a>
+                        <div><a href="#"><img src="https://dummyimage.com/1017x400/111/000000" title="event2" alt="event"></div></a>
+                        <div><a href="#"><img src="https://dummyimage.com/1017x400/ccc/000000" title="event3" alt="event"></div></a>
+                      </div>
+                    </div>
+
+										<!-- Ranking -->
+                    <div class="col-md-3">
+                      <div class="card">
+        								<div class="card-title">
+        									<h4>Ranking </h4>
+        								</div>
+        								<div class="recent-comment">
+        									<div class="media">
+        										<div class="media-body">
+        											<h4 class="media-heading">1</h4>
+        										</div>
+        									</div>
+        									<div class="media">
+        										<div class="media-body">
+        											<h4 class="media-heading">2</h4>
+        										</div>
+        									</div>
+        									<div class="media">
+        										<div class="media-body">
+        											<h4 class="media-heading">3</h4>
+        										</div>
+        									</div>
+        									<div class="media">
+        										<div class="media-body">
+        											<h4 class="media-heading">4</h4>
+        										</div>
+        									</div>
+                          <div class="media no-border">
+                            <div class="media-body">
+                              <h4 class="media-heading">5</h4>
+                            </div>
+                          </div>
+        								</div>
+        							</div>
+                    </div>
                     <div class="col-md-3">
                         <div class="card p-30">
                             <div class="media">
@@ -408,7 +477,7 @@
                                     <span><i class="fa fa-usd f-s-40 color-primary"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2>568120</h2>
+                                    <h2>568,120원</h2>
                                     <p class="m-b-0">Total Revenue</p>
                                 </div>
                             </div>
@@ -421,7 +490,7 @@
                                     <span><i class="fa fa-shopping-cart f-s-40 color-success"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2>1178</h2>
+                                    <h2>1,178원</h2>
                                     <p class="m-b-0">Sales</p>
                                 </div>
                             </div>
@@ -434,7 +503,7 @@
                                     <span><i class="fa fa-archive f-s-40 color-warning"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2>25</h2>
+                                    <h2>52,500원</h2>
                                     <p class="m-b-0">Stores</p>
                                 </div>
                             </div>
@@ -447,7 +516,7 @@
                                     <span><i class="fa fa-user f-s-40 color-danger"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2>847</h2>
+                                    <h2>847원</h2>
                                     <p class="m-b-0">Customer</p>
                                 </div>
                             </div>
@@ -455,9 +524,123 @@
                     </div>
                 </div>
 
+                <!--카테고리 별 추천 상품-->
                 <div class="row bg-white m-l-0 m-r-0 box-shadow ">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-title">
+                        <h4>category1 </h4>
+                      </div>
+                      <div class="recent-comment">
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">1</h4>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">2</h4>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">3</h4>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">4</h4>
+                          </div>
+                        </div>
+                        <div class="media no-border">
+                          <div class="media-body">
+                            <h4 class="media-heading">5</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--이미지 슬라이드 -->
+                  <div class="card bg-dark col-md-3">
+                      <div class="testimonial-widget-one p-17">
+                          <div class="testimonial-widget-one owl-carousel owl-theme">
+                              <div class="item">
+                                  <div class="testimonial-content">
+                                      <img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/2.jpg" />" alt="" />
+                                      <div class="testimonial-author">John</div>
+                                      <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
 
-                    <!-- column -->
+                                      <div class="testimonial-text">
+                                          <i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                                          <i class="fa fa-quote-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="testimonial-content">
+                                      <img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/3.jpg" />" alt="" />
+                                      <div class="testimonial-author">Abraham</div>
+                                      <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+                                      <div class="testimonial-text">
+                                          <i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                                          <i class="fa fa-quote-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="testimonial-content">
+                                      <img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/1.jpg" />" alt="" />
+                                      <div class="testimonial-author">Lincoln</div>
+                                      <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+                                      <div class="testimonial-text">
+                                          <i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                                          <i class="fa fa-quote-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="testimonial-content">
+                                      <img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/4.jpg" />" alt="" />
+                                      <div class="testimonial-author">TYRION LANNISTER</div>
+                                      <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+                                     <div class="testimonial-text">
+                                          <i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                                          <i class="fa fa-quote-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="testimonial-content">
+                                      <img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/5.jpg" />" alt="" />
+                                      <div class="testimonial-author">TYRION LANNISTER</div>
+                                      <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+                                      <div class="testimonial-text">
+                                          <i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                                          <i class="fa fa-quote-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item">
+                                  <div class="testimonial-content">
+                                      <img class="testimonial-author-img" src="<c:url value="/resources/images/avatar/6.jpg" />" alt="" />
+                                      <div class="testimonial-author">TYRION LANNISTER</div>
+                                      <div class="testimonial-author-position">Founder-Ceo. Dell Corp</div>
+
+                                      <div class="testimonial-text">
+                                          <i class="fa fa-quote-left"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
+                                          <i class="fa fa-quote-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                    <!-- column
                     <div class="col-lg-8">
                         <div class="card">
                             <div class="card-body">
@@ -466,9 +649,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- column -->
+                     column -->
 
-                    <!-- column -->
+                    <!--
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body browser">
@@ -492,17 +675,67 @@
                                     <div role="progressbar" style="width: 65%; height:8px;" class="progress-bar bg-warning wow animated progress-animated"> <span class="sr-only">60% Complete</span> </div>
                                 </div>
 
-								<p class="m-t-30 f-w-600">android<span class="pull-right">65%</span></p>
+								                <p class="m-t-30 f-w-600">android<span class="pull-right">65%</span></p>
                                 <div class="progress m-b-30">
                                     <div role="progressbar" style="width: 65%; height:8px;" class="progress-bar bg-success wow animated progress-animated"> <span class="sr-only">60% Complete</span> </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- column -->
+                     column -->
+
+                     <!-- 상품전시 -->
+                     <div class="col-md-6">
+                         <div class="card p-30 col-md-3">
+                             <div class="media">
+                                 <div class="media-left meida media-middle">
+                                     <span><i class="fa fa-usd f-s-40 color-primary"></i></span>
+                                 </div>
+                                 <div class="media-body media-text-right">
+                                     <h2>568120</h2>
+                                     <p class="m-b-0">Total Revenue</p>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="card p-30 col-md-3">
+                             <div class="media">
+                                 <div class="media-left meida media-middle">
+                                     <span><i class="fa fa-shopping-cart f-s-40 color-success"></i></span>
+                                 </div>
+                                 <div class="media-body media-text-right">
+                                     <h2>1178</h2>
+                                     <p class="m-b-0">Sales</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="card p-30">
+                             <div class="media">
+                                 <div class="media-left meida media-middle">
+                                     <span><i class="fa fa-archive f-s-40 color-warning"></i></span>
+                                 </div>
+                                 <div class="media-body media-text-right">
+                                     <h2>25</h2>
+                                     <p class="m-b-0">Stores</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="card p-30">
+                             <div class="media">
+                                 <div class="media-left meida media-middle">
+                                     <span><i class="fa fa-user f-s-40 color-danger"></i></span>
+                                 </div>
+                                 <div class="media-body media-text-right">
+                                     <h2>847</h2>
+                                     <p class="m-b-0">Customer</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
                 </div>
+                <!--
                 <div class="row">
-					<div class="col-lg-3">
+					           <div class="col-lg-3">
                         <div class="card bg-dark">
                             <div class="testimonial-widget-one p-17">
                                 <div class="testimonial-widget-one owl-carousel owl-theme">
@@ -707,9 +940,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- /# card -->
 						</div>
-						<!-- /# column -->
 						<div class="col-lg-6">
 							<div class="card">
 								<div class="card-body">
@@ -773,13 +1004,13 @@
                     </div>
 
                 </div>
-
+              -->
 
                 <!-- End PAge Content -->
             </div>
             <!-- End Container fluid  -->
             <!-- footer -->
-            <footer class="footer"> � 2018 All rights reserved. Template designed by <a href="https://colorlib.com">Colorlib</a></footer>
+            <footer class="footer"> @ 2018 All rights reserved. Template designed by <a href="https://colorlib.com">Colorlib</a></footer>
             <!-- End footer -->
         </div>
         <!-- End Page wrapper  -->
@@ -822,6 +1053,22 @@
 
     <script src="<c:url value="/resources/js/custom.min.js" />"></script>
 
+    <!-- bxSlider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('.slider').bxSlider({
+            auto: true,
+            autoControls: false,
+            controls: true,
+            mode: 'fade',
+            captions: true,
+            slideWidth: 0,
+            speed : 100
+          });
+      });
+  </script>
 </body>
 
 </html>
