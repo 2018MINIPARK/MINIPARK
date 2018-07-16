@@ -92,10 +92,10 @@ public class HomeController {
 		return "order_breakdown";
 	}
 	
-	@RequestMapping(value = "/CartList", method = RequestMethod.GET)
+	@RequestMapping(value = "/cart_list", method = RequestMethod.GET)
 	public String cart(Locale locale, Model model) {
 		logger.info("CartList page! The client locale is {}.", locale);
 		
-		return "CartList";
+		return "cart_list";
 	}
 }
