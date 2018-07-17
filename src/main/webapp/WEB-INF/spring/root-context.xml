@@ -17,9 +17,9 @@
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
-		<property name="url" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/book_ex?useSSL=false"></property>
-		<property name="username" value="sehee"></property>
-		<property name="password" value="235689"></property>
+		<property name="url" value="jdbc:log4jdbc:mysql://minipark.c0sbhj7jluse.ap-northeast-2.rds.amazonaws.com/minipark?useSSL=false"></property>
+		<property name="username" value="minipark"></property>
+		<property name="password" value="adminminipark18"></property>
 	</bean>	
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -41,9 +41,9 @@
 	
 	<aop:config></aop:config>
 	
-	<context:component-scan base-package="com.javalec.persistence"></context:component-scan>
-	<context:component-scan base-package="com.javalec.service"></context:component-scan>
-    <context:component-scan base-package="com.javalec.aop"></context:component-scan>
+	<context:component-scan base-package="com.minipark.persistence"></context:component-scan>
+	<context:component-scan base-package="com.minipark.service"></context:component-scan>
+    <context:component-scan base-package="com.minipark.aop"></context:component-scan>
 		
 	
 		
